@@ -22,14 +22,14 @@ def main():
     st.title("Bank Product Subscription Prediction")
 
     # Input fields for the features
-    age = st.number_input('Age', min_value=18, max_value=100, value=30)
-    job = st.selectbox('Job', options=label_encoders['job'].classes_)
-    marital = st.selectbox('Marital', options=label_encoders['marital'].classes_)
-    education = st.selectbox('Education', options=label_encoders['education'].classes_)
-    default = st.selectbox('Default', options=label_encoders['default'].classes_)
-    balance = st.number_input('Balance', value=0)
-    housing = st.selectbox('Housing', options=label_encoders['housing'].classes_)
-    loan = st.selectbox('Loan', options=label_encoders['loan'].classes_)
+    age = st.number_input('Whats your Age', min_value=18, max_value=100, value=30)
+    job = st.selectbox('Which Job Category do you belong to', options=label_encoders['job'].classes_)
+    marital = st.selectbox('Marital Status', options=label_encoders['marital'].classes_)
+    education = st.selectbox('Whats your Education level', options=label_encoders['education'].classes_)
+    default = st.selectbox('Have you ever Defaulted on a Loan', options=label_encoders['default'].classes_)
+    balance = st.number_input('Whats your Average Account Balance yearly in Ksh', value=0)
+    housing = st.selectbox('Do you have a house Loan?', options=label_encoders['housing'].classes_)
+    loan = st.selectbox('Do you currently have a Personal Loan', options=label_encoders['loan'].classes_)
     
      # Button to make prediction
     if st.button('Predict'):
