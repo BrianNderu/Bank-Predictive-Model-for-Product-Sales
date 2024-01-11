@@ -30,14 +30,23 @@ def main():
     balance = st.number_input('Whats your Average Account Balance yearly in Ksh', value=0)
     housing = st.selectbox('Do you have a house Loan?', options=label_encoders['housing'].classes_)
     loan = st.selectbox('Do you currently have a Personal Loan', options=label_encoders['loan'].classes_)
-    
+    contact = st.selectbox('What Methos was Used to reach you', options=label_encoders['contact'].classes_)
+    day = st.number_input('Approximately how many days ago did someone reach you out', min_value=1, max_value=31, value=15)
+    month = st.selectbox('Lat month contact with you', options=label_encoders['month'].classes_)
+    duration = st.number_input('When was the last contact Duration in Days', min_value=0, value=100)
+    campaign = st.number_input('How many times did someone contact you', min_value=1, value=1)
+    #pdays = st.number_input('How many days passed since last contact', min_value=-1, value=-1)
+    #previous = st.number_input('Number of times someone ever contacted you before this Campaign', min_value=0, value=0)
+    #poutcome = st.selectbox('How would you rate your contact experience', options=label_encoders['poutcome'].classes_)
      # Button to make prediction
     if st.button('Predict'):
         # Create a dataframe with the input features
         input_data = pd.DataFrame([[
-            age, job, marital, education, default, balance, housing, loan
+            age, job, marital, education, default, balance, housing, loan,
+            contact, day, month, duration, campaign
         ]], columns=[
-            'age', 'job', 'marital', 'education', 'default', 'balance', 'housing', 'loan'
+            'age', 'job', 'marital', 'education', 'default', 'balance', 'housing', 'loan',
+            'contact', 'day', 'month', 'duration', 'campaign'
         ])
 
         # Encode the input data
