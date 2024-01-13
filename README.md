@@ -22,7 +22,7 @@ We will use the F1 score to evaluate the model performance
 ## Insights
 
 ### Education by Client Subscription
-<img src="/Images/education distribution.pmg"/>
+<img src="/Images/education distribution.png"/>
 
 
 ### Job Category by Client subscription
