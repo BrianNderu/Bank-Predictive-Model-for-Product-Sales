@@ -14,3 +14,19 @@ The data has been obtained from UCI repository
 
 It contains data collected from a Portugal bank clients on various columns and whether they purchased the product or not
 
+The data contains 45,200 rows and 17 columns
+
+## Metrics
+We will use the F1 score to evaluate the model performance
+
+## Insights
+
+### Education by Client Subscription
+<img src="/Images/education distribution.pmg"/>
+
+
+### Job Category by Client subscription
+<img src="/Images/Job distribution.png"/>
+
+## Model 
+First 
