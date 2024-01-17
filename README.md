@@ -47,4 +47,9 @@ The following Features were the most important for model classificationm (Whethe
 <img src="/Images/Feature Importance.png"/>
 
 ## Deployment
-The Random Forest 
+The Random Forest model weights were saved and deployed to streamlit for interface as seen below
+<img src="/Images/Screenshot (12).png"/>
+
+The Model cam be tested here = http://192.168.100.9:8507
+
+## Next Step
