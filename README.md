@@ -29,4 +29,10 @@ We will use the F1 score to evaluate the model performance
 <img src="/Images/Job distribution.png"/>
 
 ## Model 
-First 
+First built a Regression model which attained F1 score of 0.7
+
+Random Forest Model was built which attained an F1 Score of 0.94
+
+This Score was obtained after hyper parameter tuning
+
+The Random Forest model was choosen for deployment
