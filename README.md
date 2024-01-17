@@ -35,4 +35,16 @@ Random Forest Model was built which attained an F1 Score of 0.94
 
 This Score was obtained after hyper parameter tuning
 
+The Confusion matrix is below
+<img src="/Images/confusion matrix.png"/>
+
 The Random Forest model was choosen for deployment
+
+## Feature Importance
+
+The following Features were the most important for model classificationm (Whether the individual will take the Bank product or not)
+
+<img src="/Images/Feature Importance.png"/>
+
+## Deployment
+The Random Forest 

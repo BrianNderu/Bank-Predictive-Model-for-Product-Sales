@@ -30,7 +30,7 @@ def main():
     balance = st.number_input('Whats your Average Account Balance yearly in Ksh', value=0)
     housing = st.selectbox('Do you have a house Loan?', options=label_encoders['housing'].classes_)
     loan = st.selectbox('Do you currently have a Personal Loan', options=label_encoders['loan'].classes_)
-    contact = st.selectbox('What Methos was Used to reach you', options=label_encoders['contact'].classes_)
+    contact = st.selectbox('What Method was Used to reach you', options=label_encoders['contact'].classes_)
     day = st.number_input('Approximately how many days ago did someone reach you out', min_value=1, max_value=31, value=15)
     month = st.selectbox('Lat month contact with you', options=label_encoders['month'].classes_)
     duration = st.number_input('When was the last contact Duration in Days', min_value=0, value=100)
