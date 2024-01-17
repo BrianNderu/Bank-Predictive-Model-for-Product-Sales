@@ -17,11 +17,13 @@ It contains data collected from a Portugal bank clients on various columns and w
 The data contains 45,200 rows and 17 columns
 
 ## Metrics
+
 We will use the F1 score to evaluate the model performance
 
 ## Insights
 
 ### Education by Client Subscription
+
 <img src="/Images/education distribution.png"/>
 
 
@@ -36,6 +38,7 @@ Random Forest Model was built which attained an F1 Score of 0.94
 This Score was obtained after hyper parameter tuning
 
 The Confusion matrix is below
+
 <img src="/Images/confusion matrix.png"/>
 
 The Random Forest model was choosen for deployment
@@ -47,7 +50,9 @@ The following Features were the most important for model classificationm (Whethe
 <img src="/Images/Feature Importance.png"/>
 
 ## Deployment
+
 The Random Forest model weights were saved and deployed to streamlit for interface as seen below
+
 <img src="/Images/Screenshot (12).png"/>
 
 The Model cam be tested here = http://192.168.100.9:8507
